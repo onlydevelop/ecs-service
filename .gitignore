@@ -1,0 +1,5 @@
+provision/.terraform/
+provision/terraform.*
+provision/conf/
+
+deployment/__pycache__/
