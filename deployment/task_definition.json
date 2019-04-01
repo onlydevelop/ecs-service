@@ -1,0 +1,21 @@
+{
+  "family": "sinatra-hello",
+  "containerDefinitions": [
+    {
+      "name": "web",
+      "image": "298345801946.dkr.ecr.ap-south-1.amazonaws.com/sinatra-hello:latest",
+      "cpu": 128,
+      "memoryReservation": 128,
+      "portMappings": [
+        {
+          "containerPort": 4567,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "command": [
+        "ruby", "server.rb"
+      ]
+    }
+  ]
+}
